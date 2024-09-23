@@ -123,6 +123,7 @@ public class MovementManager : MonoBehaviour
     {
         if (moveX != 0 || moveY != 0)
         {
+            animator.SetBool("isMoving", true);
             if (Mathf.Abs(moveX) > Mathf.Abs(moveY))
             {
                 currentDirection = moveX > 0 ? Direction.Right : Direction.Left;
@@ -134,25 +135,47 @@ public class MovementManager : MonoBehaviour
         }
         else
         {
+            animator.SetBool("isMoving", false);
             currentDirection = Direction.None;
         }
     }
 
     void SetDirectionOfAnimation(Direction currentDirection)
     {
-        animator.SetBool("isMoving", true);
-        switch (currentDirection)
+        if(currentDirection == Direction.Up)
         {
-            case Direction.Up:
-                break;
-            case Direction.Down:
-                break;
-            case Direction.Left:
-                break;
-            case Direction.Right:
-                break;
-            case Direction.None:
-                break;
+            animator.SetBool("isUp", true);
+        }
+        else
+        {
+            animator.SetBool("isUp", false);
+        }
+
+        if(currentDirection == Direction.Down)
+        {
+            animator.SetBool("isDown", true);
+        }
+        else
+        {
+            animator.SetBool("isDown", false);
+        }
+
+        if(currentDirection == Direction.Left)
+        {
+            animator.SetBool("isLeft", true);
+        }
+        else
+        {
+            animator.SetBool("isLeft", false);
+        }
+
+        if(currentDirection == Direction.Right)
+        {
+            animator.SetBool("isRight", true);
+        }
+        else
+        {
+            animator.SetBool("isRight", false);
         }
     }
 }
