@@ -11,12 +11,11 @@ public class Pickup : MonoBehaviour
         {
             Debug.Log("Picked up item");
             Execute();
-            Destroy(gameObject);
         }
     }
 
     protected virtual void Execute()
     {
-        return;
+        Destroy(gameObject);
     }
 }
