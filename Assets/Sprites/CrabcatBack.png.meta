@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5ec669c5657dee4dba76638b0f8f4df
+guid: 7be6931563f4be74e84f8fbc2a798b92
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 100
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CrabcatSpritesheet_0
+      name: CrabcatBack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53bce02bcbbc76d408a627efcbebefad
-      internalID: 871736105
+      spriteID: f838c70cc40a3ae4b80f759d200fd304
+      internalID: -1820504918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrabcatSpritesheet_1
+      name: CrabcatBack_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229fb4e87391036498007631c89b51da
-      internalID: -369935828
+      spriteID: d82a79e8e9d4ec649845963b9e8d59bd
+      internalID: -1631503821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrabcatSpritesheet_2
+      name: CrabcatBack_2
       rect:
         serializedVersion: 2
         x: 64
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df2df2172a774844bb434d4e972e53e
-      internalID: -1421758909
+      spriteID: a2ec386848c4c734ea62f86039cb8987
+      internalID: 1997728595
       vertices: []
       indices: 
       edges: []
@@ -170,9 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CrabcatSpritesheet_0: 871736105
-      CrabcatSpritesheet_1: -369935828
-      CrabcatSpritesheet_2: -1421758909
+      CrabcatBack_0: -1820504918
+      CrabcatBack_1: -1631503821
+      CrabcatBack_2: 1997728595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

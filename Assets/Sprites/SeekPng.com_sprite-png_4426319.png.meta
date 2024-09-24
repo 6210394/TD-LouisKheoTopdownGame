@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5ec669c5657dee4dba76638b0f8f4df
+guid: 63d3f645880c77549a7069872836a490
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 100
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CrabcatSpritesheet_0
+      name: SeekPng.com_sprite-png_4426319_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 32
-        height: 32
+        width: 170
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53bce02bcbbc76d408a627efcbebefad
-      internalID: 871736105
+      spriteID: b09fe8285e125154eb3d1b7c4bdecf8f
+      internalID: 16412952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrabcatSpritesheet_1
+      name: SeekPng.com_sprite-png_4426319_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 211
         y: 0
-        width: 32
-        height: 32
+        width: 130
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229fb4e87391036498007631c89b51da
-      internalID: -369935828
+      spriteID: 1b26dd39a3102454ba05c96c2f0ce40a
+      internalID: 134441730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CrabcatSpritesheet_2
+      name: SeekPng.com_sprite-png_4426319_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 431
         y: 0
-        width: 32
-        height: 32
+        width: 80
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df2df2172a774844bb434d4e972e53e
-      internalID: -1421758909
+      spriteID: bbc471d7224f4d348aad05121f18413e
+      internalID: -1058769236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeekPng.com_sprite-png_4426319_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 40
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268e8edd70211914db8aea89a89ec431
+      internalID: -1906929890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeekPng.com_sprite-png_4426319_4
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 0
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5513578f57d601645a2598918c01a757
+      internalID: 2042746485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeekPng.com_sprite-png_4426319_5
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 0
+        width: 130
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918173f0e680bc3438c66749c70b93b0
+      internalID: 1120971200
       vertices: []
       indices: 
       edges: []
@@ -170,9 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CrabcatSpritesheet_0: 871736105
-      CrabcatSpritesheet_1: -369935828
-      CrabcatSpritesheet_2: -1421758909
+      SeekPng.com_sprite-png_4426319_0: 16412952
+      SeekPng.com_sprite-png_4426319_1: 134441730
+      SeekPng.com_sprite-png_4426319_2: -1058769236
+      SeekPng.com_sprite-png_4426319_3: -1906929890
+      SeekPng.com_sprite-png_4426319_4: 2042746485
+      SeekPng.com_sprite-png_4426319_5: 1120971200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
