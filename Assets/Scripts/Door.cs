@@ -16,16 +16,19 @@ public class Door : Pickup
     public int requiredKeyID = 0;
     protected override void Execute()
     {
-        if (GameManager.instance.CheckInventory("Key" + requiredKeyID))
+        
+        if (InventoryScript.instance.CheckInventory(this.gameObject))
         {
-            GameManager.instance.RemoveFromInventory("Key" + requiredKeyID);
+            InventoryScript.instance.RemoveFromInventory("Key" + requiredKeyID);
             OpenDoor();
         }
+        
         else
         {
             Debug.Log("Locked.");
             return;
         }
+        
     }
 
     private void OpenDoor()

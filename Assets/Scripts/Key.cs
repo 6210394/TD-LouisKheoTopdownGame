@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Key : Pickup
@@ -8,7 +9,9 @@ public class Key : Pickup
 
     protected override void Execute()
     {
-        GameManager.instance.AddToInventory("Key" + keyID);
+        GameObject keyCopy = new GameObject();
+        keyCopy.name = "Key" + keyID;
+        InventoryScript.instance.AddToInventory(keyCopy);
         base.Execute();
     }
 

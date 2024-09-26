@@ -178,4 +178,6 @@ public class MovementManager : MonoBehaviour
             animator.SetBool("isRight", false);
         }
     }
+
+       
 }

@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
         instance = this;
         DontDestroyOnLoad(this);
     }
@@ -23,32 +27,12 @@ public class GameManager : MonoBehaviour
     #region Score Management
 
         [SerializeField]
-        private int score;
-        public int scoreAdded = 100000;
-        public void AddScore()
+        public int score;
+        public void AddScore(int scoreAdded)
         {
             score += scoreAdded;
         }
     #endregion
 
-    #region Inventory Management
 
-        [SerializeField]
-        private List<string> playerInventory = new List<string>();
-
-        public void AddToInventory(string item)
-        {
-            playerInventory.Add(item);
-        }
-
-        public void RemoveFromInventory(string item)
-        {
-            playerInventory.Remove(item);
-        }
-
-        public bool CheckInventory(string item)
-        {
-            return playerInventory.Contains(item);
-        }
-    #endregion
 }
