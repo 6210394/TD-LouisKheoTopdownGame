@@ -17,7 +17,7 @@ public class Door : Pickup
     protected override void Execute()
     {
         
-        if (InventoryScript.instance.CheckInventory(this.gameObject))
+        if (InventoryScript.instance.CheckInventory("Key" + requiredKeyID))
         {
             InventoryScript.instance.RemoveFromInventory("Key" + requiredKeyID);
             OpenDoor();

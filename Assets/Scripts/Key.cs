@@ -9,9 +9,7 @@ public class Key : Pickup
 
     protected override void Execute()
     {
-        GameObject keyCopy = new GameObject();
-        keyCopy.name = "Key" + keyID;
-        InventoryScript.instance.AddToInventory(keyCopy);
+        InventoryScript.instance.AddToInventory(this.gameObject.name + keyID);
         base.Execute();
     }
 

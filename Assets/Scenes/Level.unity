@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractable: 0
-  sceneToLoad: End
+  sceneToLoad: Level2
 --- !u!1001 &1689920505
 PrefabInstance:
   m_ObjectHideFlags: 0

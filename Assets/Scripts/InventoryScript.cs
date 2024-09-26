@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class InventoryScript : MonoBehaviour
@@ -16,46 +15,28 @@ public class InventoryScript : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
+    public bool hasFloater = false;
+    [SerializeField]
+    public SpriteRenderer floaterVisuals;
 
-        #region Inventory Management
+    #region Inventory Management
 
-        [SerializeField]
-        private List<GameObject> playerInventory = new List<GameObject>();
+    [SerializeField]
+    private List<string> playerInventory = new List<string>();
 
-        public void AddToInventory(GameObject item)
-        {
-            playerInventory.Add(item);
-        }
+    public void AddToInventory(string item)
+    {
+        playerInventory.Add(item);
+    }
 
-        public void RemoveFromInventory(string item)
-        {
-            playerInventory.Remove(FindInventoryItem(item));
-        }
+    public void RemoveFromInventory(string item)
+    {
+        playerInventory.Remove(item);
+    }
 
-        public bool CheckInventory(GameObject itemLock)
-        {
-            foreach (GameObject inventoryItem in playerInventory)
-            {
-                if (inventoryItem.name == "Key" + itemLock.GetComponent<Door>().requiredKeyID)
-                {
-                    return true;
-                }
-                //add checks for different items
-            }
-            return false;
-        }
-
-        public GameObject FindInventoryItem(string searchName)
-        {
-            foreach (GameObject inventoryItem in playerInventory)
-            {
-                if (inventoryItem.name == searchName)
-                {
-                    return inventoryItem;
-                }
-            }
-            return null;
-        }        
-        
+    public bool CheckInventory(string item)
+    {
+        return playerInventory.Contains(item);
+    }
     #endregion
 }
