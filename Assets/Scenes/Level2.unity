@@ -735,6 +735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndFlower
       objectReference: {fileID: 0}
+    - target: {fileID: 3463935194340511477, guid: e94f83918a64463498ee603a90fc3e1a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5319527729020411599, guid: e94f83918a64463498ee603a90fc3e1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -196.0482
