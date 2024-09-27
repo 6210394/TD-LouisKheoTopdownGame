@@ -4,17 +4,6 @@ using UnityEngine;
 
 public class InventoryScript : MonoBehaviour
 {
-    public static InventoryScript instance;
-    void Awake()
-    {
-        if (instance != null)
-        {
-            Destroy(this);
-        }
-        instance = this;
-        DontDestroyOnLoad(this);
-    }
-
     public bool hasFloater = false;
     [SerializeField]
     public SpriteRenderer floaterVisuals;

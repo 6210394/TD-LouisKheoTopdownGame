@@ -6,20 +6,13 @@ using UnityEngine;
 
 public class Door : Pickup
 {
-    public Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
     public int requiredKeyID = 0;
     protected override void Execute()
     {
         
-        if (InventoryScript.instance.CheckInventory("Key" + requiredKeyID))
+        if (FindAnyObjectByType<InventoryScript>().CheckInventory("Key" + requiredKeyID))
         {
-            InventoryScript.instance.RemoveFromInventory("Key" + requiredKeyID);
+            FindAnyObjectByType<InventoryScript>().RemoveFromInventory("Key" + requiredKeyID);
             OpenDoor();
         }
         
@@ -33,6 +26,6 @@ public class Door : Pickup
 
     private void OpenDoor()
     {
-        animator.SetTrigger("isOpen");
+        Destroy(gameObject);
     }
 }

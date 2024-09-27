@@ -491,14 +491,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    - target: {fileID: 4259613189819397643, guid: ec9a427103ce6d84c8613f646cb388ff, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5806180485325946132, guid: ec9a427103ce6d84c8613f646cb388ff, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
     public bool isInteractable = false;
     public string sceneToLoad = "GameScene";
 
-    KeyCode interactKey = KeyCode.Space;
+    public KeyCode interactKey = KeyCode.Space;
 
     // Start is called before the first frame update
     void Start()

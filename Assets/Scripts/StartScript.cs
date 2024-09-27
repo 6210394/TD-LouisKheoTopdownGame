@@ -8,7 +8,7 @@ public class StartScript : MonoBehaviour
     public void LoadScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
-        InventoryScript.instance.hasFloater = false;
+        FindAnyObjectByType<InventoryScript>().hasFloater = false;
         if(sceneName == "Start")
         {
             GameManager.instance.score = 0;

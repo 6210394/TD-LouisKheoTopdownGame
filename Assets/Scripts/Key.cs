@@ -9,7 +9,7 @@ public class Key : Pickup
 
     protected override void Execute()
     {
-        InventoryScript.instance.AddToInventory(this.gameObject.name + keyID);
+        FindAnyObjectByType<InventoryScript>().AddToInventory("Key" + keyID);
         base.Execute();
     }
 

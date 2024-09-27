@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: -993897256, guid: 698bf0990a3326149a925d351e1b2839, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1505627746417685152}
   - component: {fileID: 2806996200931410633}
-  - component: {fileID: 1061048822706642573}
   - component: {fileID: 6023236217859711196}
   m_Layer: 0
   m_Name: Door
@@ -131,29 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2b7ef6e43129142a11b241ce6ce82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1061048822706642573}
-  requiredKeyID: 0
---- !u!95 &1061048822706642573
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3907896084966142234}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cdaaa7907a2d6ae4f8a6c3e67aed545b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  requiredKeyID: 2
 --- !u!61 &6023236217859711196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -389,7 +366,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 354058920, guid: 698bf0990a3326149a925d351e1b2839, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

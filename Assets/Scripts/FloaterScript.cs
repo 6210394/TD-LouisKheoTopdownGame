@@ -6,10 +6,10 @@ public class FloaterScript : Pickup
 {
     protected override void Execute()
     {
-        InventoryScript.instance.hasFloater = true;
+        FindAnyObjectByType<InventoryScript>().hasFloater = true;
         foreach (GameObject shallowWater in GameObject.FindGameObjectsWithTag("Water"))
         {
-            shallowWater.GetComponent<Collider2D>().isTrigger = true;
+            shallowWater.GetComponent<BoxCollider2D>().isTrigger = true;
         }
         base.Execute();
     }

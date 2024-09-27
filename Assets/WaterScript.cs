@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class WaterScript : SpeedZone
 {
-    
+    InventoryScript inventoryScript;
+
+    private void Start()
+    {
+        inventoryScript = FindAnyObjectByType<InventoryScript>();
+    }
+
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        InventoryScript.instance.floaterVisuals.enabled = true;
+        inventoryScript.floaterVisuals.enabled = true;
         base.OnTriggerEnter2D(collision);
     }
 
     protected override void OnTriggerExit2D(Collider2D collision)
     {
-        InventoryScript.instance.floaterVisuals.enabled = false;
+        inventoryScript.floaterVisuals.enabled = false;
         base.OnTriggerExit2D(collision);
     }
 
