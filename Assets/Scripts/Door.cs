@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Door : Pickup
+public class Door : Interactable
 {
     public int requiredKeyID = 0;
-    protected override void Execute()
+
+    protected override void Interact()
     {
         
         if (FindAnyObjectByType<InventoryScript>().CheckInventory("Key" + requiredKeyID))
